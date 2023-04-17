@@ -1,5 +1,9 @@
 # Torch MNF
 
+Updated by creating ´uci_mnf.py´ to run method with MLPs on UCI datasets.
+
+------------------------------------------
+
 [![Tests](https://github.com/janosh/torch-mnf/actions/workflows/test.yml/badge.svg)](https://github.com/janosh/torch-mnf/actions/workflows/test.yml)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/janosh/torch-mnf/master.svg)](https://results.pre-commit.ci/latest/github/janosh/torch-mnf/master)
 ![GitHub Repo Size](https://img.shields.io/github/repo-size/janosh/torch-mnf?label=Repo+Size)
