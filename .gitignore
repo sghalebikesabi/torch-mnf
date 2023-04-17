@@ -9,6 +9,7 @@ results/predictions
 multirun
 outputs
 data
+*sweeps.sh
 
 data/MNIST
 runs
