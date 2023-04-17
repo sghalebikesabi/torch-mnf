@@ -25,6 +25,7 @@ class MNFFeedForward(Sequential):
                 [MNFLinear()(s1, s2, **kwargs), activation(), BatchNorm1d(s2)]
             )
         super().__init__(*layers[:-2])  # drop final activation and batch norm
+        self.layers = layers[:-2]
 
     def kl_div(self) -> float:
         """Compute current KL divergence of the whole model. Should be included

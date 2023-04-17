@@ -44,7 +44,7 @@ class MNFLinear(nn.Module):
         self.flow_r = flows.NormalizingFlow(flow_r)
 
     def forward(self, x):  # see algorithm 1 in MNF paper
-        z, _ = self.sample_z(x.size(0))
+        z, _ = self.sample_z(x.shape[0])
         mean = x * z @ self.W_mean.T + self.b_mean
 
         W_var = self.W_log_var.exp()
